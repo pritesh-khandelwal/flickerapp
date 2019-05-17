@@ -14,6 +14,16 @@
 		9E0D674E228B1DD100ECD993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0D674C228B1DD100ECD993 /* LaunchScreen.storyboard */; };
 		9E0D6759228B1DD200ECD993 /* FlickerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D6758228B1DD200ECD993 /* FlickerAppTests.swift */; };
 		9E0D6764228B1DD200ECD993 /* FlickerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D6763228B1DD200ECD993 /* FlickerAppUITests.swift */; };
+		9EA98BB7228E8AA80042CA37 /* viewControllerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA98BB6228E8AA80042CA37 /* viewControllerNetwork.swift */; };
+		9EBA3D62228DB1BE000049CC /* imageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBA3D61228DB1BE000049CC /* imageManager.swift */; };
+		9EBB2C0A228E920A00CE36DC /* viewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB2C09228E920A00CE36DC /* viewControllerDelegate.swift */; };
+		9ED1BCA0228B210800DB985E /* imageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1BC9E228B210800DB985E /* imageCell.swift */; };
+		9ED1BCA1228B210800DB985E /* imageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED1BC9F228B210800DB985E /* imageCell.xib */; };
+		9ED1BCA3228B321200DB985E /* photoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1BCA2228B321200DB985E /* photoModel.swift */; };
+		9ED1BCA5228B330500DB985E /* flickerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1BCA4228B330500DB985E /* flickerNetwork.swift */; };
+		9ED1BCA7228B368A00DB985E /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1BCA6228B368A00DB985E /* helper.swift */; };
+		9ED1BCAA228B43EF00DB985E /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1BCA8228B43EF00DB985E /* CustomFooterView.swift */; };
+		9ED1BCAB228B43EF00DB985E /* CustomFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED1BCA9228B43EF00DB985E /* CustomFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		9E0D675F228B1DD200ECD993 /* FlickerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0D6763228B1DD200ECD993 /* FlickerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerAppUITests.swift; sourceTree = "<group>"; };
 		9E0D6765228B1DD200ECD993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA98BB6228E8AA80042CA37 /* viewControllerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerNetwork.swift; sourceTree = "<group>"; };
+		9EBA3D61228DB1BE000049CC /* imageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageManager.swift; sourceTree = "<group>"; };
+		9EBB2C09228E920A00CE36DC /* viewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerDelegate.swift; sourceTree = "<group>"; };
+		9ED1BC9E228B210800DB985E /* imageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCell.swift; sourceTree = "<group>"; };
+		9ED1BC9F228B210800DB985E /* imageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageCell.xib; sourceTree = "<group>"; };
+		9ED1BCA2228B321200DB985E /* photoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoModel.swift; sourceTree = "<group>"; };
+		9ED1BCA4228B330500DB985E /* flickerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flickerNetwork.swift; sourceTree = "<group>"; };
+		9ED1BCA6228B368A00DB985E /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		9ED1BCA8228B43EF00DB985E /* CustomFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
+		9ED1BCA9228B43EF00DB985E /* CustomFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +117,12 @@
 		9E0D6742228B1DD000ECD993 /* FlickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				9EBA3D60228D98B1000049CC /* Common */,
+				9EBA3D5F228D9894000049CC /* Controller */,
+				9EBA3D5E228D9867000049CC /* view */,
+				9EBA3D5D228D9859000049CC /* model */,
 				9E0D6743228B1DD000ECD993 /* AppDelegate.swift */,
-				9E0D6745228B1DD000ECD993 /* ViewController.swift */,
-				9E0D6747228B1DD000ECD993 /* Main.storyboard */,
 				9E0D674A228B1DD100ECD993 /* Assets.xcassets */,
-				9E0D674C228B1DD100ECD993 /* LaunchScreen.storyboard */,
 				9E0D674F228B1DD100ECD993 /* Info.plist */,
 			);
 			path = FlickerApp;
@@ -123,6 +144,47 @@
 				9E0D6765228B1DD200ECD993 /* Info.plist */,
 			);
 			path = FlickerAppUITests;
+			sourceTree = "<group>";
+		};
+		9EBA3D5D228D9859000049CC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9ED1BCA2228B321200DB985E /* photoModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9EBA3D5E228D9867000049CC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D6747228B1DD000ECD993 /* Main.storyboard */,
+				9ED1BCA8228B43EF00DB985E /* CustomFooterView.swift */,
+				9ED1BCA9228B43EF00DB985E /* CustomFooterView.xib */,
+				9ED1BC9E228B210800DB985E /* imageCell.swift */,
+				9ED1BC9F228B210800DB985E /* imageCell.xib */,
+				9E0D674C228B1DD100ECD993 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9EBA3D5F228D9894000049CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D6745228B1DD000ECD993 /* ViewController.swift */,
+				9EA98BB6228E8AA80042CA37 /* viewControllerNetwork.swift */,
+				9EBB2C09228E920A00CE36DC /* viewControllerDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EBA3D60228D98B1000049CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9ED1BCA6228B368A00DB985E /* helper.swift */,
+				9ED1BCA4228B330500DB985E /* flickerNetwork.swift */,
+				9EBA3D61228DB1BE000049CC /* imageManager.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0D674E228B1DD100ECD993 /* LaunchScreen.storyboard in Resources */,
+				9ED1BCA1228B210800DB985E /* imageCell.xib in Resources */,
 				9E0D674B228B1DD100ECD993 /* Assets.xcassets in Resources */,
+				9ED1BCAB228B43EF00DB985E /* CustomFooterView.xib in Resources */,
 				9E0D6749228B1DD000ECD993 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBA3D62228DB1BE000049CC /* imageManager.swift in Sources */,
+				9ED1BCAA228B43EF00DB985E /* CustomFooterView.swift in Sources */,
+				9EA98BB7228E8AA80042CA37 /* viewControllerNetwork.swift in Sources */,
+				9ED1BCA5228B330500DB985E /* flickerNetwork.swift in Sources */,
 				9E0D6746228B1DD000ECD993 /* ViewController.swift in Sources */,
 				9E0D6744228B1DD000ECD993 /* AppDelegate.swift in Sources */,
+				9ED1BCA7228B368A00DB985E /* helper.swift in Sources */,
+				9EBB2C0A228E920A00CE36DC /* viewControllerDelegate.swift in Sources */,
+				9ED1BCA3228B321200DB985E /* photoModel.swift in Sources */,
+				9ED1BCA0228B210800DB985E /* imageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +505,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMF37ZY643;
 				INFOPLIST_FILE = FlickerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +524,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMF37ZY643;
 				INFOPLIST_FILE = FlickerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

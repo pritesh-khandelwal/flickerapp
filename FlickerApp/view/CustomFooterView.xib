@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBN-Sw-W8z">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-Ln-0CS">
+                            <rect key="frame" x="150" y="15" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="sxH-Ln-0CS" firstAttribute="centerY" secondItem="QBN-Sw-W8z" secondAttribute="centerY" id="LL8-E0-cU5"/>
+                        <constraint firstItem="sxH-Ln-0CS" firstAttribute="centerX" secondItem="QBN-Sw-W8z" secondAttribute="centerX" id="P2L-rf-n9K"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="QBN-Sw-W8z" secondAttribute="trailing" id="82x-5j-UVf"/>
+                <constraint firstItem="QBN-Sw-W8z" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Gvn-on-UcM"/>
+                <constraint firstAttribute="bottom" secondItem="QBN-Sw-W8z" secondAttribute="bottom" id="Uqx-GE-t9x"/>
+                <constraint firstItem="QBN-Sw-W8z" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="zy4-5E-lly"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+        </collectionReusableView>
+    </objects>
+</document>
